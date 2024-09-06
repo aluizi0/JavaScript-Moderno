@@ -4,15 +4,27 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="index.css">
 </head>
 <body>
-    <!--
-        1. Criar um jogo da velha, utilizando html css e javascript, css e javascript em arquivos separados.
-        2. Possibilidade de incluir dois jogadores 
-    -->
-        
     <h1>Jogo da Velha</h1>
+
+    <div>
+        <label for="player1">Player 1:</label>
+        <input type="text" id="player1" placeholder="Enter player 1 name">
+    </div>
+
+    <div>
+        <label for="player2">Player 2:</label>
+        <input type="text" id="player2" placeholder="Enter player 2 name">
+    </div>
+
+    <button id="startGame">Start Game</button>
+
+    <div id="gameBoard">
+        <!-- Game board goes here -->
+    </div>
+
+    <script src="index.js" defer></script>
 </body>
-<script src="script.js" defer></script>
 </html>
