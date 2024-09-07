@@ -8,22 +8,29 @@
 </head>
 <body>
     <h1>Jogo da Velha</h1>
+    <hr>
 
-    <div>
-        <label for="player1">Player 1:</label>
-        <input type="text" id="player1" placeholder="Enter player 1 name">
-    </div>
+    <label for="player1">Player1 (X):</label>
+    <input type="text" id="player1" placeholder="Enter player 1 name">
 
-    <div>
-        <label for="player2">Player 2:</label>
-        <input type="text" id="player2" placeholder="Enter player 2 name">
-    </div>
+    <label for="player2">Player1 (O):</label>
+    <input type="text" id="player2" placeholder="Enter player 2 name">
 
-    <button id="startGame">Start Game</button>
+    <button id="start">Start Game!</button>
 
-    <div id="gameBoard">
-        <!-- Game board goes here -->
-    </div>
+    <h2>Vez de: <span id="turnPlayer"></span></h2>
+
+    <section id="gameBoard">
+        <span data-region="0.0"></span>
+        <span data-region="0.1"></span>
+        <span data-region="0.2"></span>
+        <span data-region="1.0"></span>
+        <span data-region="1.1"></span>
+        <span data-region="1.2"></span>
+        <span data-region="2.0"></span>
+        <span data-region="2.1"></span>
+        <span data-region="2.2"></span>
+    </section>
 
     <script src="index.js" defer></script>
 </body>
