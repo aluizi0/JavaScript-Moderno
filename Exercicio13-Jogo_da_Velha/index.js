@@ -19,9 +19,36 @@ function initializeGame() {
     });
 }
 
+// Função para desabilitar uma região do tabuleiro marcada
+function disableRegion(element){
+    element.style.cursor = 'default';
+    element.removeEventListener('click', handleBoardClick);
+
+}
+
 // Função para lidar com o clique no tabuleiro
 function handleBoardClick(ev) {
-    console.log('clicou');
+    const span = ev.currentTarget
+    const region = ev.currentTarget.dataset.region // N.N.N.N
+    const rowColumnPair = region.split('.') // [ 'N', 'N', 'N', 'N' ]
+    const row = rowColumnPair[0]
+    const column = rowColumnPair[1]
+
+    // Verifica de quem é a vez e marca o tabuleiro com 'X' ou 'O'
+    if (turnPlayer === 'player1'){
+        span.innerText = 'X'
+        vBoard[row][column] = 'X'
+    } else {
+        span.innerText = 'O'
+        vBoard[row][column] = 'O'
+    }
+
+    // Limpa o console e exibe o estado atual do tabuleiro
+    console.clear()
+    console.table(vBoard)
+
+    // Chamando função de desbilitar regiao ja marcada no tabuleiro
+    disableRegion(span)
 }
 
 // Adiciona o evento de clique ao botão de iniciar o jogo
