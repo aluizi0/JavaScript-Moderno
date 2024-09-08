@@ -17,7 +17,6 @@ body {
 /* Estiliza cada célula do tabuleiro */
 #gameBoard span {
     background-color: #ddd; /* Cor de fundo das células */
-    cursor: pointer; /* Cursor muda para pointer ao passar sobre as células */
     display: grid; /* Usa o layout de grade (grid) */
     place-content: center; /* Centraliza o conteúdo da célula */
     font-size: 2rem; /* Tamanho da fonte do conteúdo da célula */
@@ -26,4 +25,8 @@ body {
 /* Estiliza as células vencedoras */
 #gameBoard span.win {
     background-color: #0f0; /* Cor de fundo verde para células vencedoras */
+}
+
+.cursor-pointer {
+    cursor: pointer;
 }
