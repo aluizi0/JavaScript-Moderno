@@ -4,23 +4,30 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Jogo da Velha</title>
+    <!-- Link para o arquivo de estilos CSS -->
     <link rel="stylesheet" href="index.css">
 </head>
 <body>
     <h1>Jogo da Velha</h1>
     <hr>
 
+    <!-- Campo de entrada para o nome do Jogador 1 (X) -->
     <label for="player1">Player1 (X):</label>
     <input type="text" id="player1" placeholder="Enter player 1 name">
 
-    <label for="player2">Player1 (O):</label>
+    <!-- Campo de entrada para o nome do Jogador 2 (O) -->
+    <label for="player2">Player2 (O):</label>
     <input type="text" id="player2" placeholder="Enter player 2 name">
 
+    <!-- Botão para iniciar o jogo -->
     <button id="start">Start Game!</button>
 
+    <!-- Exibição do jogador atual -->
     <h2>Vez de: <span id="turnPlayer"></span></h2>
 
+    <!-- Tabuleiro do jogo da velha -->
     <section id="gameBoard">
+        <!-- Cada <span> representa uma célula do tabuleiro com um atributo data-region para identificar a posição -->
         <span data-region="0.0"></span>
         <span data-region="0.1"></span>
         <span data-region="0.2"></span>
@@ -31,7 +38,5 @@
         <span data-region="2.1"></span>
         <span data-region="2.2"></span>
     </section>
-
-    <script src="index.js" defer></script>
 </body>
 </html>

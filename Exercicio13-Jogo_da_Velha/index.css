@@ -1,25 +1,29 @@
-body{
+/* Define a fonte padrão para o corpo da página */
+body {
     font-family: sans-serif;
 }
 
-#gameBoard{
-    background-color: #232323;
-    display: grid;
-    grid-template-columns: 6rem 6rem 6rem;
-    grid-template-rows: 6rem 6rem 6rem;
-    gap: 0.5rem;
-    margin-bottom: 1.5rem;
-    max-width: 19rem;
+/* Estiliza o tabuleiro do jogo da velha */
+#gameBoard {
+    background-color: #232323; /* Cor de fundo do tabuleiro */
+    display: grid; /* Usa o layout de grade (grid) */
+    grid-template-columns: 6rem 6rem 6rem; /* Define três colunas de 6rem cada */
+    grid-template-rows: 6rem 6rem 6rem; /* Define três linhas de 6rem cada */
+    gap: 0.5rem; /* Espaçamento entre as células */
+    margin-bottom: 1.5rem; /* Margem inferior do tabuleiro */
+    max-width: 19rem; /* Largura máxima do tabuleiro */
 }
 
-#gameBoard span{
-    background-color: #ddd;
-    cursor: pointer;
-    display: grid;
-    place-content: center;
-    font-size: 2rem;
+/* Estiliza cada célula do tabuleiro */
+#gameBoard span {
+    background-color: #ddd; /* Cor de fundo das células */
+    cursor: pointer; /* Cursor muda para pointer ao passar sobre as células */
+    display: grid; /* Usa o layout de grade (grid) */
+    place-content: center; /* Centraliza o conteúdo da célula */
+    font-size: 2rem; /* Tamanho da fonte do conteúdo da célula */
 }
 
-#gameBoard span.win{
-    background-color: #0f0;
+/* Estiliza as células vencedoras */
+#gameBoard span.win {
+    background-color: #0f0; /* Cor de fundo verde para células vencedoras */
 }
