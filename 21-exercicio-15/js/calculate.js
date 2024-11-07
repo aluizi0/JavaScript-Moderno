@@ -5,4 +5,4 @@ export default function calculate() {
     const result = eval(input.value)
     resultInput.value = result
     resultInput.classList.remove("error")
-    }
+}
